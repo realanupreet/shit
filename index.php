@@ -57,10 +57,63 @@
     }
 
     sayHi("mickey");
+
+
+    function cube($n)
+    {
+        return pow($n, 3);
+    }
+    echo cube(4);
+
+    $isMale = true;
+    if ($isMale) {
+        echo "You are male";
+    } else {
+        echo "you are female";
+    }
+    switch ($grades) {
+        case "A":
+            echo "You did amazing";
+            break;
+        default:
+            echo "invalid";
+    }
+    $i = 1;
+    while ($i <= 5) {
+        echo "<br>$i";
+        $i++;
+    }
+
+    ?>
+    Your name is 
+    <?php echo $_GET["name"] ?? null;
+class Book
+{
+var $title;
+var $author;
+var $pages;
+
+function __construct()
+{
+echo "new book created";
+}
+}
+class novels extends Book
+{
+}
+$book1 = new Book;
+$book1->title = "jk row";
+echo $book1->title;
+//custom data ; 
+?>
+    <?php
+    $content = "We dont do content creation";
+    include "footer.php"
+
+
+
     ?>
 
-
-    Your name is <?php echo $_GET["name"] ?? null; ?>
 
 </body>
 
